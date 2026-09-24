@@ -1,0 +1,44 @@
+{
+  "_comment": "Model roster. Endpoints are local OpenAI-compatible (vLLM) servers; net_guard blocks non-loopback hosts. served_id must match /v1/models. The paper's primary evaluation uses Qwen2.5-72B-Instruct-AWQ with temperature-zero decoding; the attacker and reviewer roles are only used when the live attacker / dual review is enabled (disabled in the paper).",
+  "models": [
+    {
+      "alias": "qwen25_72b",
+      "served_id": "qwen25-72b",
+      "base_url": "http://127.0.0.1:8010/v1",
+      "api_key": "EMPTY",
+      "max_model_len": 16384,
+      "max_tokens_per_turn": 512,
+      "request_timeout_seconds": 240
+    },
+    {
+      "alias": "gemma4_31b",
+      "served_id": "gemma4-31b",
+      "base_url": "http://127.0.0.1:8005/v1",
+      "api_key": "EMPTY",
+      "max_model_len": 7680,
+      "max_tokens_per_turn": 384,
+      "request_timeout_seconds": 180
+    },
+    {
+      "alias": "mistral_small_3p2",
+      "served_id": "mistral-small-3p2",
+      "base_url": "http://127.0.0.1:8007/v1",
+      "api_key": "EMPTY",
+      "max_model_len": 16384,
+      "max_tokens_per_turn": 384,
+      "request_timeout_seconds": 180
+    }
+  ],
+  "roles": {
+    "targets": [
+      "qwen25_72b"
+    ],
+    "targets_bfcl": [
+      "qwen25_72b"
+    ],
+    "targets_toolsandbox": [],
+    "attacker": "gemma4_31b",
+    "reviewer_a": "gemma4_31b",
+    "reviewer_b": "mistral_small_3p2"
+  }
+}

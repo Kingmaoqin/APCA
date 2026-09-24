@@ -1,0 +1,14 @@
+{
+ "../controls_episodes.csv": "891188b524de86cc3f542ee56fcf4b9790fe18220a4794702105efad82d2fb57",
+ "../primary_episodes.csv": "1b24f31e0ce875608ff0590c822f520813bd97ac827a2ff003f4d25309b2b5cf",
+ "../recompute.py": "6aab683b6ef055696b47ba6fb562361df5641cbe9f31d52cacd5228e09850e94",
+ "BENCHMARK_CARD.md": "2e25e3c5ae055b03af4891bd9cdf7b421ca08504109d643dde524dfbc168cf22",
+ "case_traces.json": "bfdbcac313727689c7ea4637ce9deb1009cd9ee29f81cb0bf92c49e7ce2e5b05",
+ "compression_policy.json": "d4253923e60b3cdeaf962b07a7cddf50004bd81ebf988b16d429585b1b0c219c",
+ "inflation_policy.json": "b3b25ff7084e22ce99e3139cf24c1c377762da0337826819dcc67104a80713a3",
+ "intervention_library.json": "1a0da4179e94b16cacfebf2c5b67590bbc4cdc73a66b5b1f2f2bb4c31e78239c",
+ "observable_records.jsonl.gz": "45a8cd0266fdcd6febfe1a1c503dbfbc8b5845ca50f02618a6d1b218c679f420",
+ "score_records.py": "6d371146b46c298fea37a80e2967f35d5f3e01d6296cc36862d53b65f30096a7",
+ "splits.json": "31a82f2e6914764e3923f0f47f68bbd3f052ee8b420cef04dba69e2d6318cb51",
+ "task_manifest.json": "a466e5c6982ae3b48150e8f127eaee2cde8976873ea37e4555a3ddc5dce1e557"
+}
