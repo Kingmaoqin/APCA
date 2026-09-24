@@ -43,21 +43,6 @@ python loopshift_bench/score_records.py   # Python >= 3.10, standard library onl
 pip install numpy
 python recompute.py
 ```
-
-The scorer recomputes all metrics from `observable_records.jsonl.gz` and cross-checks the 2,793
-usable rows against the CSVs. Expected output: 2,817 scored records, 24 infrastructure exclusions,
-0 metric mismatches. `recompute.py` writes `results/condition_summary.csv` and
-`results/paired_effects.csv` (20,000 task-bootstrap draws, sign-flip tests, seed 20260903). For the
-primary compression comparison it prints:
-
-```text
-     Q apca-neutral     n=39 -0.504 [-0.910, -0.120] p=0.0169
-     Q static-neutral   n=39 -0.137 [-0.521, +0.256] p=0.4947
-     Q apca-static      n=39 -0.367 [-0.786, +0.043] p=0.1008
-     Z apca-static      n=39 +15.385 [+2.564, +28.205] p=0.0703
-   ZWF apca-neutral     n=39 +5.128 [+0.000, +12.820] p=0.5000
-```
-
 ## Running new trajectories
 
 New episodes need the BFCL environments and a model server.
